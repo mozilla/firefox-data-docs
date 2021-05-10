@@ -46,7 +46,7 @@ LIMIT
   3
 ```
 
-[link](https://sql.telemetry.mozilla.org/queries/71333/source)
+[`STMO#71333`](https://sql.telemetry.mozilla.org/queries/71333/source)
 
 Running this query on STMO, we get the following output:
 
@@ -83,7 +83,7 @@ FROM
   intermediate;
 ```
 
-[link](https://sql.telemetry.mozilla.org/queries/71408/source)
+[`STMO#71408`](https://sql.telemetry.mozilla.org/queries/71408/source)
 
 Which yields:
 
@@ -129,7 +129,7 @@ CROSS JOIN
   UNNEST(percentiles.percentile_nested);
 ```
 
-[link](https://sql.telemetry.mozilla.org/queries/71410/source)
+[`STMO#71410`](https://sql.telemetry.mozilla.org/queries/71410/source)
 
 Which gives us this set of results:
 
@@ -199,9 +199,9 @@ CROSS JOIN
   )
 ```
 
-[link](https://sql.telemetry.mozilla.org/queries/71472/source)
+[`STMO#71472`](https://sql.telemetry.mozilla.org/queries/71472/source)
 
-As an implementation note, observe that we don't use `histogram_merge` here as we do above: doing so would require using [`ARRAY_AGG`](https://cloud.google.com/bigquery/docs/reference/standard-sql/functions-and-operators#array_agg) which can break down when processing large amounts of data. Instead we create an intermediate result (the `per_build_day` `WITH` statement) and then reprocess it into a structured representation. If you're curious what the version using `histogram_merge` would look like, see [this example](https://sql.telemetry.mozilla.org/queries/71413/source).
+As an implementation note, observe that we don't use `histogram_merge` here as we do above: doing so would require using [`ARRAY_AGG`](https://cloud.google.com/bigquery/docs/reference/standard-sql/functions-and-operators#array_agg) which can break down when processing large amounts of data. Instead we create an intermediate result (the `per_build_day` `WITH` statement) and then reprocess it into a structured representation. If you're curious what the version using `histogram_merge` would look like, see [`STMO#71413`](https://sql.telemetry.mozilla.org/queries/71413/source).
 
 In any case, rendering the data this query returns, we get a chart like this:
 
@@ -285,7 +285,7 @@ CROSS JOIN
   UNNEST(percentiles.percentile_nested);
 ```
 
-[link](https://sql.telemetry.mozilla.org/queries/71489/source)
+[`STMO#71489`](https://sql.telemetry.mozilla.org/queries/71489/source)
 
 You'll notice this query groups by `client_id` in addition to `build_id` before `mozfun.hist.normalize`. Grouping by `client_id` gives each user equal representation and prevents "power users" from skewing the result.
 
@@ -370,7 +370,7 @@ CROSS JOIN
   UNNEST(percentiles.percentile_nested);
 ```
 
-[link](https://sql.telemetry.mozilla.org/queries/71437/source)
+[`STMO#71437`](https://sql.telemetry.mozilla.org/queries/71437/source)
 
 If we do this, we see this chart:
 

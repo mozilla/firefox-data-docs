@@ -24,7 +24,7 @@ limit to a short submission date range.
 ## Accessing the Data
 
 The `main_summary` table is accessible through STMO.
-Here's an [example query](https://sql.telemetry.mozilla.org/queries/4201/source).
+See [`STMO#4201`](https://sql.telemetry.mozilla.org/queries/4201/source) for an example.
 
 ## Data Reference
 

@@ -26,7 +26,7 @@ GROUP BY 1,
          2
 ```
 
-[STMO Source](https://sql.telemetry.mozilla.org/queries/53884/source)
+[`STMO#53884`](https://sql.telemetry.mozilla.org/queries/53884/source)
 
 ### Scheduling
 

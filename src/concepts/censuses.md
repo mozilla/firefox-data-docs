@@ -55,7 +55,7 @@ the next task is scheduled.
 
 Failures are ignored.
 
-The raw data is available in BigQuery (see an example [ADI query in Redash](https://sql.telemetry.mozilla.org/queries/66481)).
+The raw data is available in BigQuery (see [`STMO#66481`](https://sql.telemetry.mozilla.org/queries/66481)).
 
 Telemetry only reports whether blocklist checking is enabled or disabled
 on the client; there is no data in telemetry about blocklist fetches,

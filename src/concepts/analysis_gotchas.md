@@ -220,7 +220,7 @@ Other types of pings are not sent with Pingsender.
 This is usually okay because Firefox is expected to continue to run long
 enough to send these pings.
 
-Mobile clients do not have Pingsender. Therefore, a delay occurs as described in [this query][delay_q].
+Mobile clients do not have Pingsender. Therefore, a delay occurs as described in [`STMO#49867`][delay_q].
 
 [bug 1310703]: https://bugzilla.mozilla.org/show_bug.cgi?id=1310703
 [bug 1374270]: https://bugzilla.mozilla.org/show_bug.cgi?id=1374270
@@ -245,7 +245,7 @@ Summary of reasons for this decision:
 
 In general, data coming from an application instance not run by a human is not wanted in analysis. As of this writing, [GeckoDriver](https://github.com/mozilla/geckodriver) (one of the official mechanisms to launch and control an automated version of Firefox for e.g. web compatibility testing) is [configured _not_ to send Telemetry by default](https://searchfox.org/mozilla-central/rev/baf1cd492406a9ac31d9ccb7a51c924c7fbb151f/testing/geckodriver/src/prefs.rs#154) but we can't control for other things people might do in the field.
 
-On desktop, one field to watch out for is headless mode (`environment.system.gfx.headless` in the main ping): if that field is set, you are for certain not working with a version of Firefox being operated by a real human. You can see an example of some client pings with this field set skewing the nightly numbers in [bug 1643341](https://bugzilla.mozilla.org/show_bug.cgi?id=1643341). An easy solution is to just filter out these types of clients in your analysis. You can see an example of this pattern in [this query](https://sql.telemetry.mozilla.org/queries/71781/source).
+On desktop, one field to watch out for is headless mode (`environment.system.gfx.headless` in the main ping): if that field is set, you are for certain not working with a version of Firefox being operated by a real human. You can see an example of some client pings with this field set skewing the nightly numbers in [bug 1643341](https://bugzilla.mozilla.org/show_bug.cgi?id=1643341). An easy solution is to just filter out these types of clients in your analysis. You can see an example of this pattern in [`STMO#71781`](https://sql.telemetry.mozilla.org/queries/71781/source).
 
 ## Build Ids
 

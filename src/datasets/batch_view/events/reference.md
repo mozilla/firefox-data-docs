@@ -49,7 +49,7 @@ WHERE event_category = 'pwmgr'
   AND sample_id=0
 ```
 
-[link](https://sql.telemetry.mozilla.org/queries/73401/source)
+[`STMO#73401`](https://sql.telemetry.mozilla.org/queries/73401/source)
 
 ## Scheduling
 

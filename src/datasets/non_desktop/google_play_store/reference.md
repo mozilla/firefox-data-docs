@@ -98,7 +98,7 @@ ORDER BY
   Store_Visits DESC
 ```
 
-[link to query on STMO](https://sql.telemetry.mozilla.org/queries/74289/source)
+[`STMO#74289`](https://sql.telemetry.mozilla.org/queries/74289/source)
 
 ### Calculate Google Play Store activity for a given day by source and app
 
@@ -120,7 +120,7 @@ ORDER BY
   package_name, Store_Visits
 ```
 
-[link to query on STMO](https://sql.telemetry.mozilla.org/queries/74288/source)
+[`STMO#74288`](https://sql.telemetry.mozilla.org/queries/74288/source)
 
 ## Scheduling
 

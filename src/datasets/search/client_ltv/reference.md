@@ -8,7 +8,7 @@
 
 # Example Queries
 
-_Percent of users we predict will click an ad in the **next** 365 days by Engine._ ([source](https://sql.telemetry.mozilla.org/queries/74878/source))
+_Percent of users we predict will click an ad in the **next** 365 days by Engine._ ([`STMO#74878`](https://sql.telemetry.mozilla.org/queries/74878/source))
 
 ```sql
 SELECT

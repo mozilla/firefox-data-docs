@@ -11,4 +11,4 @@ This dataset also has detailed search aggregates by each add-on, broken out by o
 The `addons_daily` table is accessible through STMO using the
 `Telemetry (BigQuery)` data source.
 
-Here's an [example query](https://sql.telemetry.mozilla.org/queries/71007/source).
+See [`STMO#71007`](https://sql.telemetry.mozilla.org/queries/71007/source) for an example.

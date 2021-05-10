@@ -127,7 +127,7 @@ On the pipeline side, the event data is made available in different datasets:
 
 - [`main_summary`](../choosing_a_dataset.md#mainsummary) has a row for each main ping and includes
   its event payload for Firefox versions before 62.
-- [`events`](../../datasets/batch_view/events/reference.md) contains a row for each event received from main pings and event pings. See [this sample query](https://sql.telemetry.mozilla.org/queries/52582/source).
+- [`events`](../../datasets/batch_view/events/reference.md) contains a row for each event received from main pings and event pings. See [`STMO#52582`](https://sql.telemetry.mozilla.org/queries/52582/source).
 - `telemetry_mobile_event_parquet` contains a row for each mobile event ping. See [this sample query](https://sql.telemetry.mozilla.org/queries/52581/source).
 - `focus_events_longitudinal` currently contains events from Firefox Focus.
 

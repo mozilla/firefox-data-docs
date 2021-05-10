@@ -219,6 +219,6 @@ randomly assigned to one and only one bucket. If we sum MAU numbers for each
 bucket individually, we can use resampling techniques to determine the magnitude
 of variation and assign a confidence interval to our sums.
 
-As an example of calculating confidence intervals, see the
-[Desktop MAU KPI query in STMO](https://sql.telemetry.mozilla.org/queries/61957/source)
+As an example of calculating confidence intervals, see
+[`STMO#61957`](https://sql.telemetry.mozilla.org/queries/61957/source)
 which uses a jackknife resampling technique implemented as a BigQuery UDF.

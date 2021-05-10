@@ -10,7 +10,7 @@
 
 ## Example Queries
 
-[This query](https://sql.telemetry.mozilla.org/queries/51141/source)
+[`STMO#51141`](https://sql.telemetry.mozilla.org/queries/51141/source)
 calculates searches per `normalized_channel` for US clients on an arbitrary day.
 If you have trouble viewing this query,
 it's likely you don't have the proper permissions.

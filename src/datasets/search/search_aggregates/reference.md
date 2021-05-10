@@ -10,7 +10,7 @@
 
 ## Example Queries
 
-[This query](https://sql.telemetry.mozilla.org/queries/51140/source)
+[`STMO#51140`](https://sql.telemetry.mozilla.org/queries/51140/source)
 calculates daily US searches.
 If you have trouble viewing this query,
 it's likely you don't have the proper permissions.

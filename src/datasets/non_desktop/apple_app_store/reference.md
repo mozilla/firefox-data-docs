@@ -87,7 +87,7 @@ GROUP BY
   date, app_name
 ```
 
-[link to query on STMO](https://sql.telemetry.mozilla.org/queries/74291/source)
+[`STMO#74291`](https://sql.telemetry.mozilla.org/queries/74291/source)
 
 ### Calculate Apple App Store Activity for a given day and app by source
 
@@ -110,7 +110,7 @@ GROUP BY
   date, app_name, source
 ```
 
-[link to query on STMO](https://sql.telemetry.mozilla.org/queries/74290/source)
+[`STMO#74290`](https://sql.telemetry.mozilla.org/queries/74290/source)
 
 ## Scheduling
 
